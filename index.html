@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS 11</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: calibri;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 96vh;
+            background-color: rgb(255, 255, 0);
+        }
+
+        p {
+            font-size: 27px;
+            text-align: center;
+            color: #bb00ee;
+            font-weight: 600;
+            letter-spacing: 2px;
+            white-space: initial;
+            word-break: break-all;
+            padding: 0 20px;
+        }
+
+        button {
+            box-sizing: border-box;
+            outline: none;
+            margin: 20px auto;
+            padding: 17px 70px;
+            display: block;
+            border-radius: 3px;
+            border: 3px solid #bb00bb;
+            background-color: #aa00aa;
+            color: #ffff00;
+            font-size: 22px;
+            font-family: calibri;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 750px) {
+
+            body {
+                height: auto;
+            }
+
+        }
+    </style>
+
+    <script>
+
+        function chamonatvali() {
+
+            var ricxvebi = "";
+            var ricxvi = 1;
+
+            while (ricxvi <= 10) {
+
+                if (ricxvi !== 1 && ricxvi !== 5 && ricxvi !== 9) {
+
+                    ricxvebi += '<span style=" color: transparent">_</span>' + ricxvi + '<span style=" color: transparent">_</span>';
+
+                }
+
+                ricxvi++;
+            }
+
+            document.getElementById("ricxvebi").innerHTML = ricxvebi;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <p>დაწერეთ რიცხვები 1-დან 10-მდე ღილაკზე დაჭერისას (1-ის, 5-ის და 9-ის გამოტოვებით)</p>
+
+    <button onclick="chamonatvali()">დაწერე</button>
+
+    <p id="ricxvebi"></p>
+
+
+</body>
+
+</html>
